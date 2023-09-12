@@ -1,6 +1,6 @@
 FROM quay.io/keycloak/keycloak:21.0.0
-LABEL author="Vasyl Zakharchenko"
-LABEL email="vaszakharchenko@gmail.com"
+LABEL author="Diskominfo Kabupaten Probolinggo"
+LABEL email="newhanoman@gmail.com"
 LABEL name="keycloak-radius-plugin"
 COPY ./scripts /opt/radius/scripts
 COPY ./config /config
