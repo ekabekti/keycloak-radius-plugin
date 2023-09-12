@@ -10,18 +10,21 @@ services:
   keycloak:
     image: quay.io/keycloak/keycloak:21.0.0
     environment:
-      KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: admin
-      RADIUS_SHARED_SECRET: secret
+      KEYCLOAK_ADMIN: ekabekti
+      KEYCLOAK_ADMIN_PASSWORD: EkaBekti01!
+      RADIUS_SHARED_SECRET: keyradkom
       RADIUS_UDP: 'true'
       RADIUS_UDP_AUTH_PORT: 1812
       RADIUS_UDP_ACCOUNT_PORT: 1813
       RADIUS_RADSEC: 'false'
-      RADIUS_DICTIONARY: ''
-      RADIUS_RADSEC_PRIVATEKEY: /config/private.key
-      RADIUS_RADSEC_CERTIFICATE: /config/public.crt
-      RADIUS_COA: 'false'
-      RADIUS_COA_PORT: 3799
+      KC_HOSTNAME_STRICT_HTTPS: false
+      hostname-strict-https: false
+      KC_PROXY: passthrough
+     # RADIUS_DICTIONARY: ''
+     # RADIUS_RADSEC_PRIVATEKEY: /config/private.key
+     # RADIUS_RADSEC_CERTIFICATE: /config/public.crt
+     # RADIUS_COA: 'false'
+     # RADIUS_COA_PORT: 3799
       "keycloak.profile.feature.upload_scripts": enabled
     ports:
       - "8090:8080" #  UI
