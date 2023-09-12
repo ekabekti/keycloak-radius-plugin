@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:21.0.0
+FROM quay.io/keycloak/keycloak
 LABEL author="Diskominfo Kabupaten Probolinggo"
 LABEL email="newhanoman@gmail.com"
 LABEL name="keycloak-radius-plugin"
