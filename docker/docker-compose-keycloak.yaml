@@ -17,8 +17,8 @@ services:
       RADIUS_UDP_AUTH_PORT: 1812
       RADIUS_UDP_ACCOUNT_PORT: 1813
       RADIUS_RADSEC: 'false'
-      KC_HOSTNAME_STRICT_HTTPS: false
-      hostname-strict-https: false
+      KC_HOSTNAME_STRICT_HTTPS: 'false'
+      hostname-strict-https: 'false'
       KC_PROXY: passthrough
      # RADIUS_DICTIONARY: ''
      # RADIUS_RADSEC_PRIVATEKEY: /config/private.key
